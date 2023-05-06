@@ -50,7 +50,7 @@ else: # Om det inte finns en fil
         filtyp = vanligasteFiltyp
     else:
         print('Vilken filtyp är videofilerna av?')
-        svar = pyinputplus.inputMenu(allaFiltyper, numbered=True)
+        svar = pyinputplus.inputMenu(list(allaFiltyper), numbered=True)
         filtyp = str(svar)
 
 
