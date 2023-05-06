@@ -55,7 +55,7 @@ else: # Om det inte finns en fil
 
 
 # loopar över filer
-videoLista = [f.name for f in filer if f.suffix == filtyp]
+videoLista = sorted([f.name for f in filer if f.suffix == filtyp])
 
 # Starta while-loop här
 while True:
