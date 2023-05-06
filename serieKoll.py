@@ -67,7 +67,11 @@ while True:
     else:
         print('Du har inte sett några videos än...')
         print('Startar första videon...')
-
+    
+    if not videoLista:
+        print('Inga fler videos hittade!')
+        break
+    
     körFil = videoLista[0] # Plocka ut första elementet i videoListan som körfil.
     
     print('\nKörfilen är: '+ körFil)
